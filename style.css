@@ -1,0 +1,156 @@
+/* body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+} */
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A70201;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navmenu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navmenu ul li {
+    margin: 0 15px;
+}
+
+.navmenu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav-icons a i {
+    font-size: 18px;
+}
+
+.img-b {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    opacity: 1;
+    border-radius: 0; /* Remove border radius for a full-screen image */
+}
+
+/* Example styles for images inside .products */
+
+
+/* .products {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+} */
+
+.product h1 {
+    margin-left: 10px;
+    /* font-size: 24px; */
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.41px;
+    color:#333333;
+
+}
+.fresh_produce {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 10px; /* Space between items */
+    padding: 10px; /* Add some padding around the grid */
+}
+
+.products {
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 16px;
+    flex: 1 1 calc(20% - 20px); /* Each product takes 20% width with some space for the gap */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.pro-img {
+    width: 100%;
+    height: 186.57px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.favorite {
+    width: 22.43px;
+    height: 22.43px;
+    position: absolute;
+    top: 9.35px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    color: #A70201; /* Or any color you prefer */
+    font-size: 24px; /* Adjust as needed */
+}
+
+.price-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 16px; /* Adjust as needed */
+    /* margin-right: 10px; */
+    margin-bottom: 0px;
+}
+
+.add-to-cart {
+    border: 10px solid #A70201;;
+    font-size: 24px; /* Adjust as needed */
+    color: white ;/* Or any color you prefer */
+    margin-top: -30px;
+    border-radius: 3px;
+}
+
+.see-more {
+    margin-left: 10px;
+    font-size: 22px;
+    background-color: #A70201;
+    border-radius: 10px;
+    color: white;
+}
+
+

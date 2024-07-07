@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+            position: relative;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product .favorite, .product .add-to-cart {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .product .favorite {
+            top: 10px;
+            right: 10px;
+        }
+        .product .add-to-cart {
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .product .favorite:hover, .product .add-to-cart:hover {
+            background-color: #f0f0f0;
+        }
+        .product .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product .product-price {
+            color: #888;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <i class="fas fa-heart favorite"></i>
+        <img src="path-to-your-image.jpg" alt="Product Image">
+        <div class="product-title">Product Name</div>
+        <div class="product-price">$99.99</div>
+        <i class="fas fa-shopping-cart add-to-cart"></i>
+    </div>
+    <div class="product">
+        <i class="fas fa-heart favorite"></i>
+        <img src="path-to-your-image.jpg" alt="Product Image">
+        <div class="product-title">Product Name</div>
+        <div class="product-price">$99.99</div>
+        <i class="fas fa-shopping-cart add-to-cart"></i>
+    </div>
+    <!-- Repeat product blocks as needed -->
+</body>
+</html>
+
+
+<section class="products">
+    <div class="fresh_produce">
+        <h1>Fresh produce</h1>
+        <div class="product-container">
+            <div class="product">
+                <div class="product-item">
+                    <img src="images/apples.jpeg" alt="Apples">
+                    <div class="product-details">
+                        <div class="product-title">Apples</div>
+                        <div class="product-price">$25.99</div>
+                        <div class="product-icons">
+                            <i class="fas fa-heart favorite"></i>
+                            <i class="fas fa-shopping-cart add-to-cart"></i> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-item">
+                    <img src="images/brocoli.jpeg" alt="Broccoli">
+                    <div class="product-details">
+                        <div class="product-title">Broccoli</div>
+                        <div class="product-price">$25.99</div>
+                        <div class="product-icons">
+                            <i class="fas fa-heart favorite"></i>
+                            <i class="fas fa-shopping-cart add-to-cart"></i> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more products similarly -->
+        </div>
+    </div>
+    <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button>
+</section>
