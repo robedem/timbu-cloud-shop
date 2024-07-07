@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button>
+        <!-- <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button> -->
 
         <h1>Spices</h1>
         <div class="fresh_produce">
@@ -264,7 +264,7 @@
                 </div>
             </div>
         </div>
-        <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button>
+        <!-- <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button> -->
 
         <h1>best seller</h1>
         <div class="fresh_produce">
@@ -379,7 +379,7 @@
                 </div>
             </div>
         </div>
-        <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button>
+        <!-- <button class="see-more">See more <i class="fa-solid fa-circle-arrow-right"></i></button> -->
     </section>
 
         <!-- <div class="Spices">
@@ -533,81 +533,88 @@
 
     <section class="features">
         <div class="feature">
-            <i class="fa-solid fa-truck"></i>
+            <div class="icon-box">
+                <i class="fa-solid fa-truck"></i>
+            </div>
             <p>Fast delivery</p>
         </div>
         <div class="feature">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="icon-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
             <p>Easy to shop</p>
         </div>
         <div class="feature">
-            <i class="fas fa-stopwatch"></i>
+            <div class="icon-box">
+                <i class="fas fa-stopwatch"></i>
+            </div>
             <p>24/7 service</p>
         </div>
         <div class="feature">
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="icon-box">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
             <p>Easy Return</p>
         </div>
     </section>
-
-    <footer>
-          <div class="footer-top">
+    
+    <footer id="footer">
+        <div class="footer-top">
             <div class="container">
-              <div class="row">
-      
-                <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li>
-                </div>
-      
-                <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Resources<h4>
-                  <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#git">Github</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#link">linkedin</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#dis">Discord</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#ins">instagram</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#twit">Twitter</a></li>
-                  </ul>
-                </div>
-      
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Community<h4>
-                    <ul>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#git">Github</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#link">linkedin</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#dis">Discord</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#ins">instagram</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#twit">Twitter</a></li>
-                    </ul>
-                  </div>
-      
-                <div class="footer-newsletter">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <h4>Our Newsletter</h4>
-                          <p>Get new job listings and positions at the comfort of your home</p>
-                        </div>
-                        <div class="col-lg-6">
-                          <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                          </form>
-                        </div>
-                      </div>
+                <div class="row">
+                    <div class="footer-links">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
                     </div>
-                  </div>
-      
-          <div class="container">
-            <div class="copyright">
-              &copy; Copyright <strong><span>grocer</span></strong>. All Rights Reserved
+    
+                    <div class="footer-resources">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Suggestions</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-community">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Mailing list</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Sign up for our newsletter to get the latest news in your box</p>
+                        <form action="" method="post" onsubmit="return false;">
+                            <input type="email" name="email" placeholder="Enter your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                        <p>Your email is safe with us. We don't spam.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </footer><!-- End Footer -->
-      
+        </div>
+    
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>grocer</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    
+    
 
 </body>
 </html>
