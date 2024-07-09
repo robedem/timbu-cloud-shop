@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo"> <i class="fa-solid fa-apple-whole"></i> grocer</a>
+            
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#hero" class="">Home</a></li>
+                  <li><a href="index.html">Products</a></li>
+                  <li><a href="#About us">About us</a></li>
+                  <li><a href="#Contact">contact us</a></li>        
+            </nav>
+            <nav class="nav-icons">
+                <a href="#"><i class="fa-solid fa-heart"></i></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="checkout-body">
+        <div class="checkout-container">
+            <div class="checkout-form-section">
+                <h2>Personal Information</h2>
+                <form>
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" placeholder="Full name" value="Charles Boyles" />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" value="charlesboyles@gmail.com" />
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Address" />
+                    <div class="checkout-flex">
+                        <div class="checkout-half-width">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="State" />
+                        </div>
+                        <div class="checkout-half-width">
+                            <label for="province">Province</label>
+                            <input type="text" id="province" placeholder="Province" />
+                        </div>
+                    </div>
+                    <div class="checkout-flex">
+                        <div class="checkout-half-width">
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" id="zipcode" placeholder="Zip Code" />
+                        </div>
+                        <div class="checkout-half-width">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" placeholder="Phone Number" />
+                        </div>
+                    </div>
+                    <div class="checkout-flex-btn">
+                        <a href="cart.html"><button type="button" class="checkout-back-button">Back to cart</button></a>
+                        <a href="place-order.html"><button type="button" class="checkout-next-button">Next</button></a>
+                    </div>
+                </form>
+            </div>
+            <div class="checkout-summary-section">
+                <h2>Order Summary</h2>
+                <div class="checkout-item">
+                    <img src="https://via.placeholder.com/50" alt="Mangoes" />
+                    <div class="checkout-details">
+                        <p>Mangoes</p>
+                    </div>
+                    <p>$80.99</p>
+                </div>
+                <div class="checkout-item">
+                    <img src="https://via.placeholder.com/50" alt="Popcorn" />
+                    <div class="checkout-details">
+                        <p>Popcorn</p>
+                    </div>
+                    <p>$44.99</p>
+                </div>
+                <div class="checkout-item">
+                    <img src="https://via.placeholder.com/50" alt="Chocolates" />
+                    <div class="checkout-details">
+                        <p>Chocolates</p>
+                    </div>
+                    <p>$69.99</p>
+                </div>
+                <div class="checkout-total">
+                    <p>Sub total</p>
+                    <p>$164.99</p>
+                </div>
+                <div class="checkout-total">
+                    <p>Promo code</p>
+                    <p>-$14.00</p>
+                </div>
+                <div class="checkout-total">
+                    <p>Shipping fee</p>
+                    <p>$10.00</p>
+                </div>
+                <div class="checkout-total">
+                    <p>Grand total</p>
+                    <p>$168.99</p>
+                </div>
+                <div class="checkout-coupon-section">
+                    <p>Have a coupon?</p>
+                    <p>Add your code for instant discount.</p>
+                    <input type="text" placeholder="Input code" />
+                    <button type="button">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-links">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-resources">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Suggestions</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-community">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Mailing list</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Sign up for our newsletter to get the latest news in your box</p>
+                        <form action="" method="post" onsubmit="return false;">
+                            <input type="email" name="email" placeholder="Enter your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                        <p>Your email is safe with us. We don't spam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>grocer</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+
+</body>
+</html>
