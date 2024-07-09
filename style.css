@@ -603,7 +603,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 768px) {
     .navmenu ul {
-        display: none; /* Hide nav menu by default */
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 0;
@@ -614,6 +614,7 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-top: 60px;
         transition: transform 0.3s ease;
         transform: translateX(100%);
+        z-index: 1000; /* Ensure nav menu is above other content */
     }
 
     .navmenu ul.active {
@@ -621,25 +622,33 @@ input[type="number"]::-webkit-inner-spin-button {
         transform: translateX(0);
     }
 
-    .nav-bar {
-        justify-content: space-between;
-    }
+ 
 
     .hamburger {
-        display: block; /* Show hamburger icon in mobile view */
+        display: block;
     }
 
-    .cancel.active {
-        display: block; /* Show cancel icon in mobile view when menu is active */
+    .cancel {
+        display: none; /* Initially hide cancel button */
         position: fixed;
         top: 20px;
         right: 20px;
+        z-index: 1001; /* Ensure cancel button is above nav menu */
     }
 
-    .nav-icons {
-        display: none; /* Hide nav icons in mobile view */
+    .cancel.active {
+        display: block; /* Show cancel button when menu is active */
+    }
+    .navmenu ul.active + .nav-icons {
+        flex-direction: row; /* Hide nav icons when menu is active */
     }
 }
+
+
+
+
+
+
 
 
 
