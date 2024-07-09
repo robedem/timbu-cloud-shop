@@ -410,3 +410,42 @@ h2 {
     justify-content: center;
     gap: 10px;
 }
+
+.navmenu ul {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navmenu ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navmenu ul li {
+        margin: 10px 0;
+    }
+
+    .navmenu ul.show {
+        display: flex; /* Show the menu when 'show' class is added */
+    }
+
+    .nav-icons {
+        display: none; /* Hide nav icons on mobile view */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile view */
+        cursor: pointer;
+        font-size: 24px;
+        color: #000; /* Change color as needed */
+    }
+}
