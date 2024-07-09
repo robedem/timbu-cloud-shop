@@ -212,7 +212,7 @@ h2 {
 
 .checkout-coupon-section button {
     margin-left: 20px; /* Small spacing between input and button */
-    background-color: red;
+    background-color: #A70201;
     color: white;
     border: none;
     cursor: pointer;
@@ -221,7 +221,7 @@ h2 {
 }
 
 .checkout-coupon-section button:hover {
-    background-color: darkred;
+    background-color: #A70201;
 }
 
 
@@ -366,7 +366,7 @@ h2 {
 
 
 .checkout-form-section .checkout-next-button {
-    background-color: red;
+    background-color: #A70201;
     color: white;
     border: none;
     cursor: pointer;
