@@ -727,7 +727,7 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-bottom: 24px;
     }
     .coupon-form {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: row; /* Stack elements vertically */
         align-items: flex-start; /* Align items to the start */
         padding-bottom: 17px;
     }
@@ -735,15 +735,12 @@ input[type="number"]::-webkit-inner-spin-button {
     .coupon-form {
         width: 50px; /* Full width */
         margin-bottom: 10px; /* Adjust margin */
-
     }
 
-    .apply {
+    .coupon, .apply {
         width: 70px;
     }
-    .coupon-form {
-        display: inline;
-    }
+   
     .cart-summary {
         flex-direction: row; /* Stack elements vertically */
         align-items: flex-start; /* Align items to the start */
@@ -756,6 +753,15 @@ input[type="number"]::-webkit-inner-spin-button {
         display: flex;
         align-items: center;
         padding-top: 20px;
+        width: auto;
+    }
+    .continue-btn{
+        padding-right: 10px;
+        width: auto;
+    }
+    .checkout-btn {
+        padding-right: 10px;
+        width: 100px;
     }
 }
 
