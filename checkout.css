@@ -58,6 +58,21 @@ body {
 .nav-icons a i {
     font-size: 18px;
 }
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Cancel Icon */
+.cancel {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
 
 /* Checkout Page Styles */
 .checkout-body {
@@ -222,100 +237,6 @@ h2 {
 
 
 
-#footer {
-    background-color: #A70201; /* Background color */
-    color: white; /* Text color */
-    padding: 40px 0; /* Padding for top and bottom */
-    font-family: Arial, sans-serif; /* Font family */
-    margin-top: 40px;
-}
-
-#footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px; /* Padding for left and right */
-}
-
-#footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Space between columns */
-}
-
-#footer .footer-links, 
-#footer .footer-resources, 
-#footer .footer-community, 
-#footer .footer-newsletter {
-    flex: 1 1 200px; /* Flexible width with a minimum width of 200px */
-    margin: 20px;
-}
-
-#footer h4 {
-    font-size: 18px;
-    margin-bottom: 20px; /* Space below the heading */
-    padding-bottom: 10px;
-    color: white; /* Heading color */
-    text-decoration: none; /* Remove underline */
-}
-
-#footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-#footer ul li {
-    margin-bottom: 10px;
-}
-
-#footer ul li a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-#footer ul li a:hover {
-    text-decoration: underline; /* Hover effect */
-}
-
-.footer-newsletter p {
-    margin: 10px 0;
-}
-
-.footer-newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.footer-newsletter input[type="email"] {
-    padding: 10px;
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 5px; /* Rounded corners */
-    width: 100%;
-    max-width: 300px;
-}
-
-.footer-newsletter input[type="submit"] {
-    background-color: white;
-    color: #A70201;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.footer-newsletter input[type="submit"]:hover {
-    background-color: #333; /* Hover effect */
-    color: white;
-}
-
-#footer .copyright {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid white;
-    padding-top: 20px;
-}
 
 .checkout-form-section, .checkout-summary-section {
     width: 45%;
@@ -415,37 +336,131 @@ h2 {
     display: flex;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-bar {
+@media (max-width: 768px) {
+    .navmenu ul {
+        display: none;
         flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #A70201;
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+        z-index: 1000; /* Ensure nav menu is above other content */
+    }
+
+    .navmenu ul.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+ 
+
+    .hamburger {
+        display: block;
+    }
+
+    .cancel {
+        display: none; /* Initially hide cancel button */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001; /* Ensure cancel button is above nav menu */
+    }
+
+    .cancel.active {
+        display: block; /* Show cancel button when menu is active */
+    }
+    .navmenu ul.active + .nav-icons {
+        flex-direction: row; /* Hide nav icons when menu is active */
+    }
+}
+
+/* Mobile View */
+/* Mobile View */
+/* Mobile view styles */
+/* Mobile view styles */
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .checkout-body {
+        padding-top: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .checkout-container {
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: none;
+        max-width: 100%;
+        width: 100%; /* Ensure container doesn't exceed viewport width */
+    }
+
+    .checkout-form-section, .checkout-summary-section {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between sections */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+    .checkout-form-section input, .checkout-form-section button, .checkout-form-section label {
+        padding: 10px;
+    }
+
+    .checkout-flex {
+        flex-direction: column;
+    }
+
+    .checkout-half-width {
+        width: 100%;
+    }
+
+    .checkout-flex-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkout-back-button, .checkout-next-button {
+        width: 100%;
+    }
+
+    .checkout-summary-section {
+        order: -1; /* Place order summary first */
+    }
+
+    .checkout-summary-section .checkout-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .checkout-summary-section .checkout-item img {
+        margin-bottom: 10px;
+    }
+
+    .checkout-total {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .checkout-total p {
+        margin: 0;
+    }
+
+    .checkout-coupon-section {
         text-align: center;
     }
 
-    .navmenu ul {
-        display: none; /* Hide the menu by default */
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+    .checkout-coupon-section input, .checkout-coupon-section button {
+        width: calc(100% - 24px); /* Ensure elements fit within viewport width */
+        margin: 10px 12px; /* Add margin for spacing */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
 
-    .navmenu ul li {
-        margin: 10px 0;
+    .checkout-coupon-section button {
+        width: calc(100% - 24px); /* Ensure elements fit within viewport width */
     }
-
-    .navmenu ul.show {
-        display: flex; /* Show the menu when 'show' class is added */
-    }
-
-    .nav-icons {
-        display: none; /* Hide nav icons on mobile view */
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger icon on mobile view */
-        cursor: pointer;
-        font-size: 24px;
-        color: #000; /* Change color as needed */
-    }
+    
 }
+
